@@ -86,3 +86,147 @@ Migrating to AddDesc (20170519024212)
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Article number 3"], ["description", "getting old huh"], ["created_at", "2017-05-19 02:52:35.951610"], ["updated_at", "2017-05-19 02:52:35.951610"]]
   [1m[35m (65.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/articles" for 192.168.1.12 at 2017-05-19 15:57:00 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ArticlesController):
+  
+actionpack (5.1.1) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 15:57:03 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 326ms (Views: 308.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-05-19 15:57:06 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (5.1.1) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 15:57:23 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:02:55 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 222ms (Views: 207.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-05-19 16:03:06 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhCedIoAKWg53TpxaGe2nPsHMaA3AScCwLekGuS9s8v9MlGFVJtFZvBQZDoNtLCxjjiWlBWxL8GUQtv7K0GYuQ==", "article"=>{"title"=>"This is title", "description"=>"This is desc"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "This is title"], ["description", "This is desc"], ["created_at", "2017-05-19 20:03:06.711872"], ["updated_at", "2017-05-19 20:03:06.711872"]]
+  [1m[35m (54.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 78ms (ActiveRecord: 54.9ms)
+
+
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
