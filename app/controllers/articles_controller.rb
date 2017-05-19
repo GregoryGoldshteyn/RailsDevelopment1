@@ -7,8 +7,19 @@ class ArticlesController < ApplicationController
 	def create
 		#render plain: params[:article].inspect #simple code to show what is recieved by the create action
 		@article = Article.new(article_params)
-		@article.save #saves the artivle to the database
-		redirect_to articles_show(@article) #calls the show action using the article as a parameter
+		if @article.save #saves the artivle to the database
+			flash[:notice] = "Article was successfully created" #displays success message
+			redirect_to article_path(@article) #calls the show action using the article as a parameter
+		else
+			flash[:notice] = "Article could not be created"
+			render 'new' #go back to new article page
+		end
+	end
+
+	def show
+
+		@article = Article.find(params[:id]) #finds the article based on the ID from the previous page
+
 	end
 
 	private

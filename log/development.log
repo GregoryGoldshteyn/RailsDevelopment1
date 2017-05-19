@@ -230,3 +230,122 @@ Completed 204 No Content in 78ms (ActiveRecord: 54.9ms)
 
 
   [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:21:24 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:21:32 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:28:46 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:29:21 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articles/new" for 192.168.1.12 at 2017-05-19 16:31:33 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 178ms (Views: 175.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-05-19 16:31:35 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYWfKLEWriUvmek94judr5L0eDg0+YRXuTFz1Bnn9Q/2p1DZb43CK+YUt3aH6JuC58vfDBZJjJTtxAw11hvefQ==", "article"=>{"title"=>"", "description"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-05-19 16:36:03 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"epf0HfE72YNLLAKswaI64i19RGqc4l/1n3X/Rqi8bpGRtTvsL6C1jYKhXOekcTzPWELjXr5SVzbLgICnZ0BF4w==", "article"=>{"title"=>"Hello New Article", "description"=>"Try Again"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-05-19 16:36:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uaPFzT5z2FLwukZImoKx10N56NmwEMIG3uI/UiqsSkhSgQo84Oi0XDk3GAP/Ubf6NkZP7ZKgysWKF0Cz5VBhOg==", "article"=>{"title"=>"Hello New Article", "description"=>"Try Again my man"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello New Article"], ["description", "Try Again my man"], ["created_at", "2017-05-19 20:36:10.047076"], ["updated_at", "2017-05-19 20:36:10.047076"]]
+  [1m[35m (67.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.1.14:3000/articles/5
+Completed 302 Found in 74ms (ActiveRecord: 67.9ms)
+
+
+Started GET "/articles/5" for 192.168.1.12 at 2017-05-19 16:36:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/5" for 192.168.1.12 at 2017-05-19 16:36:24 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
