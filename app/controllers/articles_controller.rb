@@ -1,7 +1,29 @@
 class ArticlesController < ApplicationController
 
+	def index #this will be found at articles itself
+		#grab all articles
+		@articles = Article.all
+	end
+
+	#these will be found at articles/NAME
+	#IE articles/new
+
 	def new
 		@article = Article.new #goes to the article new webpage
+	end
+
+	def edit
+		@article = Article.find(params[:id])#finds the article by the id which is passed
+	end
+
+	def update
+		@article = Article.find(params[:id])
+		if @article.update(article_params)
+			flash[:notice] = "Article was successfully updated"
+			redirect_to article_path(@article)
+		else
+			render 'edit'
+		end
 	end
 
 	def create
