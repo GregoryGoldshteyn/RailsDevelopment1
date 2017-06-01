@@ -1,5 +1,8 @@
 class ArticlesController < ApplicationController
 
+	#Causes these actions to call this method before running
+	before_action :set_article, only: [:edit, :update, :destroy, :show] 
+
 	def index #this will be found at articles itself
 		#grab all articles
 		@articles = Article.all
@@ -13,11 +16,9 @@ class ArticlesController < ApplicationController
 	end
 
 	def edit
-		@article = Article.find(params[:id])#finds the article by the id which is passed
 	end
 
 	def update
-		@article = Article.find(params[:id])
 		if @article.update(article_params)
 			flash[:notice] = "Article was successfully updated"
 			redirect_to article_path(@article)
@@ -40,12 +41,10 @@ class ArticlesController < ApplicationController
 
 	def show
 
-		@article = Article.find(params[:id]) #finds the article based on the ID from the previous page
 
 	end
 
 	def destroy
-		@article = Article.find(params[:id])
 		@article.destroy
 		flash[:notice] = "Article was successfully deleted"
 		redirect_to articles_path
@@ -54,6 +53,9 @@ class ArticlesController < ApplicationController
 	private
 		def article_params #Private method used to whitelist paramerters used by the system
 			params.require(:article).permit(:title, :description) #permits the title and desc
+		end
+		def set_article
+			@article = Article.find(params[:id])
 		end
 
 end
