@@ -1,2 +1,78 @@
+$navbar-default-bg: #555555; //Changes the default color of the navbar
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{//Settings for the logo id
+
+	float: left;
+	font-size: 1.7em;
+	color: #FFEEEE;
+	letter-spacing: -1px;
+	font-weight: bold;
+
+}
+#logo:hover{
+
+	color: #FFF;
+	text-decoration: none;
+
+}
+
+.center{
+	text-align: center;
+}
+
+.jumbotron {
+
+	background-image: asset-url('mars.jpg');//Gets image from the images folder
+	background-size: cover; //Ensures that the background matches the width of the jumbotron
+	height: 80%;
+
+}
+
+.jumbotron h1{
+
+	color: #eee;
+	text-align: center;
+	margin-bottom: 10%;
+	letter-spacing: -1px;
+
+}
+
+.btn-lg{
+
+	font-size: 1.7em;
+	background-color: black;
+	border-color: black;
+
+}
+
+.btn-lg:hover{
+
+	background-color: grey;
+	border-color: black;
+
+}
+
+footer{
+	margin: 5%;
+	border-top: 1px solid #eeeeee;
+	color: #777777;
+}
+
+footer small{
+	float: left;
+}
+
+footer a:hover{
+	color: #555;
+}
+footer ul{
+	list-style: none;
+	float: right;
+}
+footer ul li{
+	float: left;
+	margin-left: 5%;
+}

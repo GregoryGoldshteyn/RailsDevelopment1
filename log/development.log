@@ -1136,3 +1136,331 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 192.168.1.12 at 2017-06-01 19:42:16 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3231ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/assets/config
+  /home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/assets/images
+  /home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/assets/javascripts
+  /home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/assets/stylesheets
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/node_modules
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/gregory/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/images):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___399191681149965545_70303884801340'
+Started GET "/" for 192.168.1.12 at 2017-06-01 19:47:04 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 3581ms (Views: 3573.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.1.12 at 2017-06-01 19:47:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 54ms (Views: 49.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-02 15:48:36 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 581ms (Views: 534.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.1.12 at 2017-06-02 15:48:39 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 140ms (Views: 118.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 15:57:09 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 522ms (Views: 492.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:06:42 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 2149ms (Views: 2142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:12:42 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1916ms (Views: 1909.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:12:47 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:23:07 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 252ms (Views: 245.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:25:39 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 206ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:25:42 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:25:43 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:29:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1779ms (Views: 1771.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:47:04 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 2122ms (Views: 2115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:49:09 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1928ms (Views: 1921.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:50:46 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1907ms (Views: 1899.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:53:00 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1948ms (Views: 1941.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:53:07 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:53:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:56:48 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1927ms (Views: 1919.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:57:34 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1870ms (Views: 1863.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:58:14 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1915ms (Views: 1907.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 16:59:00 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1906ms (Views: 1899.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 17:29:10 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 255ms (Views: 247.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 17:33:42 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1914ms (Views: 1907.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 17:35:08 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 278ms (Views: 270.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.1.12 at 2017-06-07 17:35:15 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+

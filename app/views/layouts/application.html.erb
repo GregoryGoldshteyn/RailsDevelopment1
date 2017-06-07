@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- This is the generic template for whole website -->
 <html>
   <head>
     <title>AlphaBlog</title>
@@ -9,7 +10,12 @@
   </head>
 
   <body>
-    	<%= render 'layouts/messages'%>
+    	<%= render 'layouts/navigation' %>
+	<%= render 'layouts/messages' %>
+	<!-- The yield is where the other pages are rendered -->
+	<div class="container">
 	<%= yield %>
+	</div>
+	<%= render 'layouts/footer' %>
   </body>
 </html>
