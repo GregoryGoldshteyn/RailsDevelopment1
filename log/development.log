@@ -1464,3 +1464,419 @@ Processing by PagesController#homepage as HTML
 Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 192.168.1.12 at 2017-06-07 18:02:28 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 254ms (Views: 247.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:02:32 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (85.5ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (87.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 174ms (Views: 143.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:03:05 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.2ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 294ms (Views: 279.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:06:42 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (0.9ms)
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/articles/_form.html.erb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+  form_for (@article, :html => {class: "form-horizontal", ro
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/articles/_form.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+rm-horizontal", role: "form"}) do |f| @output_buffer.safe_ap
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/articles/_form.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articles/_form.html.erb:11: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/articles/_form.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+app/views/articles/_form.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__3729835994915732200_70103531000580'
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:07:45 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 293ms (Views: 277.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:08:58 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 294ms (Views: 278.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:10:25 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 294ms (Views: 278.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:11:07 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 294ms (Views: 279.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:11:11 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.0ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:11:51 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 293ms (Views: 278.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:39:09 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.4ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 291ms (Views: 275.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-06-07 18:39:11 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8COdvyrVbq273lUxdtwxDr8Z587II5rV9Rz75J9l73/jjO6eKWDUNsl47W+nF2JWjQJugXv3UGnegzEDcitfaQ==", "article"=>{"title"=>"", "description"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.1ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-06-07 18:39:28 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"blq9+9EwIpdaAy5oZrFsRN86qklijPEeUgzLm6H3frh99c7a0oWYDCillja3ej8c7SEjBtFYO6J5kwF8TLnOrg==", "article"=>{"title"=>"zz", "description"=>"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.3ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 192.168.1.12 at 2017-06-07 18:49:17 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (28.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 299ms (Views: 277.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:49:20 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered articles/_form.html.erb (2.1ms)
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+.append=( if obj.errors.any? );@output_buffer.safe_append='
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___2324998223106539585_70268068491060'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__1658791738399417429_70268068572960'
+Started GET "/articles" for 192.168.1.12 at 2017-06-07 18:50:33 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 275ms (Views: 264.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:50:35 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+.append=( if obj.errors.any? );@output_buffer.safe_append='
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___3753401183408402080_70156634240560'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1736349386662123853_70156634330700'
+Started GET "/articles" for 192.168.1.12 at 2017-06-07 18:53:34 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 274ms (Views: 263.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 18:53:36 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered articles/_form.html.erb (2.1ms)
+  Rendered articles/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+.append=( if obj.errors.any? );@output_buffer.safe_append='
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__1678656621527136423_70023020423020'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___4303359810716046624_70023020488520'
+Started GET "/articles" for 192.168.1.12 at 2017-06-07 19:00:41 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 262ms (Views: 251.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 19:00:43 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+.append=( if obj.errors.any? );@output_buffer.safe_append='
+                              ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/gregory/ruby_on_rails_stuff/app2/RailsDevelopment1/app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_errors.html.erb:1: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/shared/_errors.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/shared/_errors.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_errors.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__3052564689252625875_70212502369840'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__4275728044497090055_70212502460080'
+Started GET "/articles/new" for 192.168.1.12 at 2017-06-07 19:03:32 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms) [cache miss]
+  Rendered articles/_form.html.erb (13.1ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 305ms (Views: 289.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-06-07 19:03:37 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P2s8Fuk1ot1xMTAjUQlASnZ4SWY+9J+qf7Hia0AWzNwsxE836oAYRgOXiH2AwhMSRGPAKY0gVRZULiiMrVh8yg==", "article"=>{"title"=>"zz", "description"=>"zzzzzzzzzz"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms) [cache miss]
+  Rendered articles/_form.html.erb (3.5ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 70ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-06-07 19:03:45 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hA20yNqsNKr24NUGv+66nS2rxtj/akAmMKKg1/OAroeXosfp2RmOMYRGbVhuJenFH7BPl0y+ipobPWowHs4ekQ==", "article"=>{"title"=>"zzzzzzzzzzzz", "description"=>"z"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms) [cache miss]
+  Rendered articles/_form.html.erb (3.5ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 192.168.1.12 at 2017-06-07 19:03:49 -0400
+Cannot render console from 192.168.1.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oq3BVmyLu9amLUScQnXYiq5AEbv3dHOV35YBvjcQbOopArJ3bz4BTdSL/MKTvovSnFuY9ESguSn0CctZ2l7c/A==", "article"=>{"title"=>"zzzzzzzzzzzz", "description"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms) [cache miss]
+  Rendered articles/_form.html.erb (3.6ms) [cache miss]
+  Rendered articles/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms) [cache miss]
+  Rendered layouts/_messages.html.erb (0.6ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
