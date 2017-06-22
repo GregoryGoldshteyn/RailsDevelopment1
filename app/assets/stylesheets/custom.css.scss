@@ -55,6 +55,11 @@ $navbar-default-bg: #555555; //Changes the default color of the navbar
 
 }
 
+.article-actions{
+	border-top:1px solid #ccc;
+	padding-top:5px;
+}
+
 footer{
 	margin: 5%;
 	border-top: 1px solid #eeeeee;
@@ -75,4 +80,19 @@ footer ul{
 footer ul li{
 	float: left;
 	margin-left: 5%;
+}
+
+.article-title{
+
+	font-weight: bold;
+	font-size: 1.5em;
+
+}
+
+.article-body{
+
+	border-top: 1px, solid, #eee;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
 }
